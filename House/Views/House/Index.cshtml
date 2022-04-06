@@ -13,7 +13,7 @@
     <table class="table table-hover">
         <thead>
             <tr>
-                <th scope="col">Id</th>
+                <th scope="col">row</th>
                 <th scope="col">Category</th>
                 <th scope="col">Address</th>
                 <th scope="col">Size</th>
@@ -29,7 +29,6 @@
 
             <tr>
                 <th scope="row">@queueNumber</th>
-                <td class="">@House.Id</td>
                 <td class="">@House.Category</td>
                 <td class="">@House.Address</td>
                 <td class="">@House.Size</td>
@@ -40,7 +39,8 @@
                     <a asp-action="edit" asp-controller="House" asp-route-id="@House.Id" class="btn btn-primary">Edit</a>
                     <input asp-action="delete" asp-controller="House" asp-route-id="@House.Id" type="submit" class="btn btn-danger" value="Delete">
                 </td>
-            </tr>            }
+            </tr>
+             }
         </tbody>
 
     </table>
